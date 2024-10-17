@@ -1,0 +1,2 @@
+# HDLoadout
+Loadout Randomizer
