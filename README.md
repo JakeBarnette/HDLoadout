@@ -1,2 +1,9 @@
 # HDLoadout
-Loadout Randomizer
+Loadout Randomizer :)
+
+Randomizer for Helldivers 2 loadouts that I wrote to try and make the game more enjoyable for me and my friends.
+
+Needs updates as game developes and balances are made.
+
+Generates a random loadout that is then loosely evaluated to see if the loadout will be viable against different degrees
+of missions.
