@@ -16,10 +16,15 @@ class Loadout{
 
     void Generate();
     void display();
+    void displayPARA();
     int total_penetration();
-    void set_pt(int s){penetration_target = s;}
+    void set_pt(int s){penetration_target = s;} 
     int total_damage();
     void set_dt(int d){damage_target = d;}
+    int total_meta(); //on a scale of five stars
+    void set_mt(int m){meta_target = m;}
+    void byebye();
+
     
 
 
@@ -30,6 +35,7 @@ class Loadout{
     Throwable t; //t for throwable
     int penetration_target;
     int damage_target;
+    int meta_target;
 };
 
 #endif

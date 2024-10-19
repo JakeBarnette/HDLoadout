@@ -7,6 +7,7 @@ Primary::Primary(){
     firerate = 0;
     dps = 0;
     penetration = 0;
+    meta = 0;
 }
 
 void Primary::random(){
@@ -19,6 +20,7 @@ void Primary::random(){
         firerate = 640;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 3;
         break;
 
         case 2:
@@ -27,6 +29,7 @@ void Primary::random(){
         firerate = 640;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 3;
         break;
 
         case 3:
@@ -35,6 +38,7 @@ void Primary::random(){
         firerate = 320;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 1;
         break;
         
         case 4:
@@ -43,6 +47,7 @@ void Primary::random(){
         firerate = 920;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 3;
         break;
 
         case 5:
@@ -51,6 +56,7 @@ void Primary::random(){
         firerate = 800;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 5;
         break;
 
         case 6:
@@ -59,6 +65,7 @@ void Primary::random(){
         firerate = 550;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 5;
         break;
 
         case 7:
@@ -67,6 +74,7 @@ void Primary::random(){
         firerate = 350;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 1;
         break;
         
         case 8:
@@ -75,6 +83,7 @@ void Primary::random(){
         firerate = 350;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 2;
         break;
 
         case 9:
@@ -83,6 +92,7 @@ void Primary::random(){
         firerate = 1380;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 1;
         break;
 
         case 10:
@@ -91,6 +101,7 @@ void Primary::random(){
         firerate = 520;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 1;
         break;
 
         case 11:
@@ -99,6 +110,7 @@ void Primary::random(){
         firerate = 475;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 3;
         break;
 
         case 12:
@@ -107,6 +119,7 @@ void Primary::random(){
         firerate = 80;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 3;
         break;
 
         case 13:
@@ -115,6 +128,7 @@ void Primary::random(){
         firerate = 80;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 3;
         break;
 
         case 14:
@@ -123,6 +137,7 @@ void Primary::random(){
         firerate = 80;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 4;
         break;
 
         case 15:
@@ -131,6 +146,7 @@ void Primary::random(){
         firerate = 300;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 3;
         break;
 
         case 16:
@@ -139,6 +155,7 @@ void Primary::random(){
         firerate = 330;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 4;
         break;
 
         case 17:
@@ -147,6 +164,7 @@ void Primary::random(){
         firerate = 300;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 5;
         break;
         
         case 18:
@@ -155,6 +173,7 @@ void Primary::random(){
         firerate = 50;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 5;
         break;
 
         case 19:
@@ -163,6 +182,7 @@ void Primary::random(){
         firerate = 25;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 5;
         break;
 
         case 20:
@@ -171,6 +191,7 @@ void Primary::random(){
         firerate = 100;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 3;
         break;
 
         case 21:
@@ -179,6 +200,7 @@ void Primary::random(){
         firerate = 45;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 3;
         break;
 
         case 22:
@@ -187,6 +209,7 @@ void Primary::random(){
         firerate = 60;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 1;
         break;
 
         case 23:
@@ -195,6 +218,7 @@ void Primary::random(){
         firerate = 750;
         dps = damage * firerate / 60;
         penetration = 1;
+        meta = 4;
         break;
 
         case 24:
@@ -203,6 +227,7 @@ void Primary::random(){
         firerate = 350;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 4;
         break;
 
         case 25:
@@ -211,6 +236,7 @@ void Primary::random(){
         firerate = 1000;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 5;
         break;
 
         case 26:
@@ -219,6 +245,7 @@ void Primary::random(){
         firerate = 600;
         dps = damage * firerate / 60;
         penetration = 3;
+        meta = 3;
         break;
 
         case 0:
@@ -227,6 +254,7 @@ void Primary::random(){
         firerate = 250;
         dps = damage * firerate / 60;
         penetration = 2;
+        meta = 3;
         break;
 
     }
@@ -234,5 +262,24 @@ void Primary::random(){
 }
 
 void Primary::output(){
-    cout << "Primary: " << name << endl;
+    switch(meta){
+        case 1:
+        cout << "Primary: " << name << "\033[31m    * \033[0m* * * *\n";
+        break;
+        case 2:
+        cout << "Primary: " << name << "\033[33m    * * \033[0m* * *\n";
+        break;
+        case 3:
+        cout << "Primary: " << name << "\033[32m    * * * \033[0m* *\n";
+        break;
+        case 4:
+        cout << "Primary: " << name << "\033[32m    * * * * \033[0m*\n";
+        break;
+        case 5:
+        cout << "Primary: " << name << "\033[36m    * * * * *\033[0m\n";
+        break;
+        case 0:
+        cout << "Primary: " << name << endl;
+        break;
+    }
 }

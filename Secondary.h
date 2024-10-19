@@ -17,6 +17,7 @@ class Secondary{
         int get_firerate(){return firerate;}
         int get_dps(){return dps;}
         int get_penetration(){return penetration;}
+        int get_meta(){return meta;}
 
 
         //mutators
@@ -24,6 +25,7 @@ class Secondary{
         void set_damage(int d){damage = d;}
         void set_firerate(int f){firerate = f;}
         void set_penetration(int p){penetration = p;}
+        void set_meta(int m){meta = m;}
 
         //inclass Secondary generator
         void random();
@@ -35,6 +37,7 @@ class Secondary{
         int firerate;
         int dps;
         int penetration;
+        int meta;
 };
 
 #endif
