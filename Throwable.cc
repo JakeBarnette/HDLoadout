@@ -6,6 +6,7 @@ Throwable::Throwable(){
     radius = 0;
     penetration = 0;
     meta = 0;
+    botmeta = 0;
 }
 
 void Throwable::random(){
@@ -18,6 +19,7 @@ void Throwable::random(){
         radius = 10;
         penetration = 3; 
         meta = 3;
+        botmeta = 3;
         break;
 
         case 2:
@@ -26,6 +28,7 @@ void Throwable::random(){
         radius = 7;
         penetration = 4; 
         meta = 4;
+        botmeta = 4;
         break;
 
         case 3:
@@ -34,6 +37,7 @@ void Throwable::random(){
         radius = 7;
         penetration = 3; 
         meta = 3;
+        botmeta = 1;
         break;
 
         case 4:
@@ -42,6 +46,7 @@ void Throwable::random(){
         radius = 7;
         penetration = 4; 
         meta = 5;
+        botmeta = 3;
         break;
 
         case 5:
@@ -50,6 +55,7 @@ void Throwable::random(){
         radius = 7;
         penetration = 3; 
         meta = 5;
+        botmeta = 1;
         break;
 
         case 6:
@@ -58,6 +64,7 @@ void Throwable::random(){
         radius = 10;
         penetration = 6; 
         meta = 2;
+        botmeta = 4;
         break;
 
         case 7:
@@ -66,6 +73,7 @@ void Throwable::random(){
         radius = 7;
         penetration = 6; 
         meta = 2;
+        botmeta = 2;
         break;
 
         case 8:
@@ -74,6 +82,7 @@ void Throwable::random(){
         radius = 5;
         penetration = 0; 
         meta = 1;
+        botmeta = 4;
         break;
 
         case 9:
@@ -82,6 +91,7 @@ void Throwable::random(){
         radius = 3;
         penetration = 7; 
         meta = 5;
+        botmeta = 5;
         break;
 
         case 0:
@@ -90,6 +100,7 @@ void Throwable::random(){
         radius = 0;
         penetration = 3; 
         meta = 2;
+        botmeta = 2;
         break;
 
     }
@@ -107,7 +118,30 @@ void Throwable::output(){
         cout << "Throwable: " << name << "\033[32m    * * * \033[0m* *\n";
         break;
         case 4:
+        cout << "Throwable: " << name << "\033[32m    * * * *\033[0m *\n";
+        break;
+        case 5:
+        cout << "Throwable: " << name << "\033[36m    * * * * *\033[0m\n";
+        break;
+        case 0:
+        cout << "Throwable: " << name << endl;
+        break;
+    }
+}
+
+void Throwable::outputbot(){
+    switch(botmeta){
+        case 1:
+        cout << "Throwable: " << name << "\033[31m    * \033[0m* * * *\n";
+        break;
+        case 2:
+        cout << "Throwable: " << name << "\033[33m    * * \033[0m* * *\n";
+        break;
+        case 3:
         cout << "Throwable: " << name << "\033[32m    * * * \033[0m* *\n";
+        break;
+        case 4:
+        cout << "Throwable: " << name << "\033[32m    * * * *\033[0m *\n";
         break;
         case 5:
         cout << "Throwable: " << name << "\033[36m    * * * * *\033[0m\n";

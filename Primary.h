@@ -17,6 +17,7 @@ class Primary{
         int get_dps(){return dps;}
         int get_penetration(){return penetration;}
         int get_meta(){return meta;}
+        int get_botmeta(){return botmeta;}
 
 
         //mutators
@@ -25,10 +26,12 @@ class Primary{
         void set_firerate(int f){firerate = f;}
         void set_penetration(int p){penetration = p;}
         void set_meta(int m){meta = m;}
+        void set_botmeta(int m){meta = m;}
 
         //inclass Primary generator
         void random();
         void output();
+        void outputbot();
 
     private:
         std::string name;
@@ -37,6 +40,7 @@ class Primary{
         int dps;
         int penetration;
         int meta;
+        int botmeta;
 };
 
 #endif

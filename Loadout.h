@@ -15,14 +15,16 @@ class Loadout{
     Loadout();
 
     void Generate();
+    bool eval();
     void display();
     void displayPARA();
     int total_penetration();
     void set_pt(int s){penetration_target = s;} 
-    int total_damage();
+    int total_dps();
     void set_dt(int d){damage_target = d;}
     int total_meta(); //on a scale of five stars
     void set_mt(int m){meta_target = m;}
+    void set_bug(bool e){bug = e;}
     void byebye();
 
     
@@ -36,6 +38,7 @@ class Loadout{
     int penetration_target;
     int damage_target;
     int meta_target;
+    bool bug;
 };
 
 #endif

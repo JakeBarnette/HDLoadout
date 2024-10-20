@@ -8,6 +8,7 @@ Primary::Primary(){
     dps = 0;
     penetration = 0;
     meta = 0;
+    botmeta = 0;
 }
 
 void Primary::random(){
@@ -21,6 +22,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 3;
+        botmeta = 3;
         break;
 
         case 2:
@@ -29,7 +31,8 @@ void Primary::random(){
         firerate = 640;
         dps = damage * firerate / 60;
         penetration = 2;
-        meta = 3;
+        meta = 4;
+        botmeta = 3;
         break;
 
         case 3:
@@ -39,6 +42,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 1;
+        botmeta = 1;
         break;
         
         case 4:
@@ -48,6 +52,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 3;
+        botmeta = 3;
         break;
 
         case 5:
@@ -56,7 +61,8 @@ void Primary::random(){
         firerate = 800;
         dps = damage * firerate / 60;
         penetration = 1;
-        meta = 5;
+        meta = 3;
+        botmeta = 5;
         break;
 
         case 6:
@@ -66,6 +72,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 2;
         meta = 5;
+        botmeta = 4;
         break;
 
         case 7:
@@ -75,6 +82,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 1;
+        botmeta = 2;
         break;
         
         case 8:
@@ -84,6 +92,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 2;
         meta = 2;
+        botmeta = 3;
         break;
 
         case 9:
@@ -93,6 +102,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 1;
+        botmeta = 2;
         break;
 
         case 10:
@@ -102,6 +112,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 1;
+        botmeta = 2;
         break;
 
         case 11:
@@ -111,6 +122,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 3;
+        botmeta = 4;
         break;
 
         case 12:
@@ -119,7 +131,8 @@ void Primary::random(){
         firerate = 80;
         dps = damage * firerate / 60;
         penetration = 1;
-        meta = 3;
+        meta = 4;
+        botmeta = 2;
         break;
 
         case 13:
@@ -128,7 +141,8 @@ void Primary::random(){
         firerate = 80;
         dps = damage * firerate / 60;
         penetration = 2;
-        meta = 3;
+        meta = 4;
+        botmeta = 3;
         break;
 
         case 14:
@@ -137,7 +151,8 @@ void Primary::random(){
         firerate = 80;
         dps = damage * firerate / 60;
         penetration = 1;
-        meta = 4;
+        meta = 5;
+        botmeta = 2;
         break;
 
         case 15:
@@ -147,6 +162,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 3;
+        botmeta = 3;
         break;
 
         case 16:
@@ -156,6 +172,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 4;
+        botmeta = 2;
         break;
 
         case 17:
@@ -165,6 +182,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 5;
+        botmeta = 1;
         break;
         
         case 18:
@@ -174,6 +192,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 2;
         meta = 5;
+        botmeta = 4;
         break;
 
         case 19:
@@ -183,6 +202,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 2;
         meta = 5;
+        botmeta = 4;
         break;
 
         case 20:
@@ -192,6 +212,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 2;
         meta = 3;
+        botmeta = 2;
         break;
 
         case 21:
@@ -201,6 +222,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 2;
         meta = 3;
+        botmeta = 2;
         break;
 
         case 22:
@@ -210,6 +232,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 1;
+        botmeta = 2;
         break;
 
         case 23:
@@ -218,7 +241,8 @@ void Primary::random(){
         firerate = 750;
         dps = damage * firerate / 60;
         penetration = 1;
-        meta = 4;
+        meta = 3;
+        botmeta = 4;
         break;
 
         case 24:
@@ -228,6 +252,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 2;
         meta = 4;
+        botmeta = 3;
         break;
 
         case 25:
@@ -237,6 +262,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 2;
         meta = 5;
+        botmeta = 5;
         break;
 
         case 26:
@@ -246,6 +272,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 3;
         meta = 3;
+        botmeta = 1;
         break;
 
         case 0:
@@ -255,6 +282,7 @@ void Primary::random(){
         dps = damage * firerate / 60;
         penetration = 2;
         meta = 3;
+        botmeta = 4;
         break;
 
     }
@@ -263,6 +291,29 @@ void Primary::random(){
 
 void Primary::output(){
     switch(meta){
+        case 1:
+        cout << "Primary: " << name << "\033[31m    * \033[0m* * * *\n";
+        break;
+        case 2:
+        cout << "Primary: " << name << "\033[33m    * * \033[0m* * *\n";
+        break;
+        case 3:
+        cout << "Primary: " << name << "\033[32m    * * * \033[0m* *\n";
+        break;
+        case 4:
+        cout << "Primary: " << name << "\033[32m    * * * * \033[0m*\n";
+        break;
+        case 5:
+        cout << "Primary: " << name << "\033[36m    * * * * *\033[0m\n";
+        break;
+        case 0:
+        cout << "Primary: " << name << endl;
+        break;
+    }
+}
+
+void Primary::outputbot(){
+    switch(botmeta){
         case 1:
         cout << "Primary: " << name << "\033[31m    * \033[0m* * * *\n";
         break;

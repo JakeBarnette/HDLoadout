@@ -7,6 +7,7 @@ Secondary::Secondary(){
     dps = 0;
     penetration = 0;
     meta = 0;
+    botmeta = 0;
 }
 
 void Secondary::random(){
@@ -20,6 +21,7 @@ void Secondary::random(){
         dps = damage * firerate / 60;
         penetration = 1; 
         meta = 1;
+        botmeta = 1;
         break;
 
         case 2:
@@ -29,6 +31,7 @@ void Secondary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 2;
+        botmeta = 2;
         break;
 
         case 3:
@@ -38,6 +41,7 @@ void Secondary::random(){
         dps = damage * firerate / 60;
         penetration = 2;
         meta = 4;
+        botmeta = 3;
         break;
 
         case 4:
@@ -47,6 +51,7 @@ void Secondary::random(){
         dps = damage * firerate / 60;
         penetration = 3;
         meta = 5;
+        botmeta = 5;
         break;
 
         case 5:
@@ -56,6 +61,7 @@ void Secondary::random(){
         dps = damage * firerate / 60;
         penetration = 1; 
         meta = 3;
+        botmeta = 3;
         break;
 
         case 6:
@@ -65,6 +71,7 @@ void Secondary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 4;
+        botmeta = 2;
         break;
 
         case 7:
@@ -74,6 +81,7 @@ void Secondary::random(){
         dps = damage * firerate / 60;
         penetration = 3;
         meta = 3;
+        botmeta = 2;
         break;
 
         case 8:
@@ -83,6 +91,7 @@ void Secondary::random(){
         dps = damage * firerate / 60;
         penetration = 3;
         meta = 5;
+        botmeta = 3;
         break;
 
         case 0:
@@ -92,6 +101,7 @@ void Secondary::random(){
         dps = damage * firerate / 60;
         penetration = 1;
         meta = 1;
+        botmeta = 2;
         break;
 
     }
@@ -109,7 +119,30 @@ void Secondary::output(){
         cout << "Secondary: " << name << "\033[32m    * * * \033[0m* *\n";
         break;
         case 4:
+        cout << "Secondary: " << name << "\033[32m    * * * *\033[0m *\n";
+        break;
+        case 5:
+        cout << "Secondary: " << name << "\033[36m    * * * * *\033[0m\n";
+        break;
+        case 0:
+        cout << "Secondary: " << name << endl;
+    break;
+    }
+}
+
+void Secondary::outputbot(){
+    switch(botmeta){
+        case 1:
+        cout << "Secondary: " << name << "\033[31m    * \033[0m* * * *\n";
+        break;
+        case 2:
+        cout << "Secondary: " << name << "\033[33m    * * \033[0m* * *\n";
+        break;
+        case 3:
         cout << "Secondary: " << name << "\033[32m    * * * \033[0m* *\n";
+        break;
+        case 4:
+        cout << "Secondary: " << name << "\033[32m    * * * *\033[0m *\n";
         break;
         case 5:
         cout << "Secondary: " << name << "\033[36m    * * * * *\033[0m\n";
